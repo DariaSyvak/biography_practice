@@ -10,14 +10,14 @@ public class Author {
 
     //Create 6 args custom constructor here
     //YOUR CODE HERE
-            public Author(String firstName,String lastName,String country,boolean isAlive,int age,ArrayList<Book>listOfBooks){
-                this.firstName=firstName;
-                this.lastName=lastName;
-                this.country=country;
-                this.isAlive=isAlive;
-                this.age=age;
-                this.listOfBooks=listOfBooks;
-            }
+    public Author(String firstName, String lastName, String country, boolean isAlive, int age, ArrayList<Book> listOfBooks) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.country = country;
+        this.isAlive = isAlive;
+        this.age = age;
+        this.listOfBooks = listOfBooks;
+    }
 
 
     /*

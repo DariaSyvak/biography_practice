@@ -37,7 +37,6 @@ public class Biography {
 
         //YOUR CODE HERE
         Scanner userInput = new Scanner(System.in);
-        String bookInfo;
 
         System.out.println("What is your favorite author’s first name?");
         String name = userInput.next();
@@ -58,14 +57,12 @@ public class Biography {
         }
 
         ArrayList<Book> booksList = new ArrayList<>();
-
+        String bookInfo;
         do {
-
-
             System.out.println("Would you like enter book information? (Y/N)");
             bookInfo = userInput.next();
             if (bookInfo.toUpperCase().startsWith("N")) break;
-            else if (bookInfo.toUpperCase().startsWith("Y")){
+            else if (bookInfo.toUpperCase().startsWith("Y")) {
                 System.out.println("What is the book name?");
                 String bookName = userInput.next();
 
@@ -79,8 +76,6 @@ public class Biography {
                 booksList.add(book);
             }
 
-
-
         }
         while (bookInfo.toUpperCase().startsWith("Y"));
 
@@ -88,15 +83,12 @@ public class Biography {
 
         System.out.println("Author's information = " + author);
 
-        if(!author.listOfBooks.isEmpty()){
+        if (!author.listOfBooks.isEmpty()) {
             System.out.println("Author's books are as listed below:");
             for (Book book : author.listOfBooks) {
                 System.out.println(book);
             }
         }
-
-
-
 
 
     }

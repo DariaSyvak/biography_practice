@@ -15,7 +15,6 @@ public class Book {
       this.name=name;
       this.genre=genre;
       this.totalPage=totalPage;
-
     }
 
 
